@@ -23,4 +23,4 @@ for line in infile:
     check[words[0]].append(words[2])
 
 for key in check.keys():
-    print('{} {} {}').format(key, check[key][0], check[key][-1])
+    print "{} {} {}".format(key, check[key][0], check[key][-1])
