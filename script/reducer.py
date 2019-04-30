@@ -14,10 +14,9 @@ for line in infile:
 
     try:
         a=float(words[1])
-    except:
-        print(words)
-        #next(infile)
+        b=float(words[2])
+        print('{} {}%').format(words[0], round(100*(b-a)/a, 2))
+    
+    except ValueError as err:
+        print(words, err)
 
-    b=float(words[2])
-
-    print ( words[0], 100*(b-a)/a, '%')
