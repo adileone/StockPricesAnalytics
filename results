@@ -1,0 +1,36 @@
+1Job - MR 
+
+PJT		incremento: 99378798.71%	min: 0.01		max: 10947.2		avg: 63190.24
+CODA		incremento: 34694897.53%	min: 0.028		max: 1354500.0		avg: 6305.1
+DTW		incremento: 9848899.32%		min: 0.001		max: 23849.5		avg: 2113.35
+ORG		incremento: 9848899.32%		min: 0.001		max: 23849.5		avg: 1638.14
+ABIO		incremento: 9509900.43%		min: 1.05		max: 318150.0		avg: 34150.09
+AJXA		incremento: 9099899.57%		min: 0.001		max: 23849.5		avg: 1957.98
+CTAA		incremento: 8999899.57%		min: 0.001		max: 2019.14		avg: 26373.65
+TWLO		incremento: 4499900.11%		min: 0.0002		max: 68.97		avg: 1183326.74
+MAMS		incremento: 3163399.87%		min: 0.3		max: 10125.0		avg: 12520.1
+GNL		incremento: 2795899.78%		min: 0.001		max: 27.96		avg: 219931.88
+
+
+Job Counters 
+		Killed map tasks=2
+		Launched map tasks=17
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=824802
+		Total time spent by all reduce tasks (ms)=995854
+Map-Reduce Framework
+		Map input records=20973890
+		Map output records=15946754
+		Reduce input records=15946754
+		Reduce output records=10
+		Spilled Records=31893508
+		Shuffled Maps =15
+		CPU time spent (ms)=1675500
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------		
+
+1Job - Hive
+
+ 

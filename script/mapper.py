@@ -1,5 +1,6 @@
 #!/usr/bin/env python2
 import sys
+from datetime import datetime as dt
 
 check = dict()
 
@@ -17,10 +18,10 @@ for line in infile:
     #split it into words
     words = line.split(',')
 
-    if words[0] not in check.keys():
-        check[words[0]]=[]
-    
-    check[words[0]].append(words[2])
+    date = dt.strptime(words[7], "%Y-%m-%d")
+    start = dt.strptime("1998-01-01", "%Y-%m-%d")
+    end = dt.strptime("2018-01-01", "%Y-%m-%d")
 
-for key in check.keys():
-    print "{} {} {}".format(key, check[key][0], check[key][-1])
+
+    if ((date > start) and (date < end)):
+        print "{} {} {}".format(words[0], words[2], words[6])
