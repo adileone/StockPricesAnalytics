@@ -11,7 +11,9 @@ Ogni riga del primo (historical_stock_prices) ha i seguenti campi:
 * highThe: prezzo massimo
 * volume: numero di transazioni
 * date: data nel formato aaaa-mm-gg
+
 Il secondo (historical_stocks) ha invece questi campi:
+
 * ticker: simbolo dell’azione
 * exchange: NYSE o NASDAQ
 * name: nome dell’azienda
