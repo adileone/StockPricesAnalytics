@@ -48,7 +48,7 @@ sorted_by_value = sorted(myDict.items(), key = lambda kv:(kv[1], kv[0]))
 sorted_by_value.reverse()
 
 for elementoLista in sorted_by_value[:10]:
-    print "{}\tincremento: {}%\tmin: {}\tmax: {}\t\avg: {}".format(elementoLista[0],
+    print "{}\tincremento: {}%\tmin: {}\tmax: {}\tavg: {}".format(elementoLista[0],
                                                             elementoLista[1][0],
                                                             round(elementoLista[1][1],4),
                                                             round(elementoLista[1][2],3), 

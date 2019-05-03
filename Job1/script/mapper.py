@@ -22,6 +22,5 @@ for line in infile:
     start = dt.strptime("1998-01-01", "%Y-%m-%d")
     end = dt.strptime("2018-01-01", "%Y-%m-%d")
 
-
     if ((date > start) and (date < end)):
         print "{} {} {}".format(words[0], words[2], words[6])
