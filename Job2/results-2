@@ -1,0 +1,62 @@
+1Job - MR (job2/join_mapper.py+job2/join_reducer.py) - first stage
+
+AABA	0.692708313465118	600000	1996-07-26	TECHNOLOGY
+AABA	0.708333313465118	3923200	1996-12-31	TECHNOLOGY
+AABA	0.708333313465118	4926400	1996-12-20	TECHNOLOGY
+AABA	0.708333313465118	686400	1996-07-30	TECHNOLOGY
+AABA	0.71875			3510400	1996-07-11	TECHNOLOGY
+...
+...
+
+Job Counters 
+		Killed map tasks=1
+		Launched map tasks=17
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=168329
+		Total time spent by all reduce tasks (ms)=41651
+Map-Reduce Framework
+		Map input records=20980351
+		Map output records=20980335
+		CPU time spent (ms)=144870
+		
+
+1Job - MR (job2/final_mapper.py+job2/final_reducer.py) - second stage
+
+2018	TRANSPORTATION	15782363800.0	-66.74%	38.6871212919
+2017	TRANSPORTATION	24750549271.0	-52.63%	81.5810706392
+2016	TRANSPORTATION	26396056641.0	386.56%	182.529858182
+2015	TRANSPORTATION	26978967802.0	-20.9%	38.5524729492
+2014	TRANSPORTATION	24014045100.0	-36.54%	51.800322937
+2013	TRANSPORTATION	20484526900.0	20.84%	88.79075189
+2012	TRANSPORTATION	20500094900.0	-17.18%	76.2441030934
+2011	TRANSPORTATION	24018175100.0	-42.21%	91.5884295103
+2010	TRANSPORTATION	25103251800.0	-58.86%	164.759432923
+2009	TRANSPORTATION	32166875600.0	-77.36%	419.335837224
+2008	TRANSPORTATION	34045323700.0	-49.64%	1876.29855629
+2007	TRANSPORTATION	22648103900.0	-3.33%	4028.58546876
+2006	TRANSPORTATION	15731458900.0	-19.5%	4601.59876629
+2005	TRANSPORTATION	11779550500.0	90.69%	6546.02329
+2004	TRANSPORTATION	10146574000.0	0%	3875.09863624
+
+....
+....
+
+Job Counters 
+		Killed map tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=698605
+		Total time spent by all reduce tasks (ms)=87968
+Map-Reduce Framework
+		Map input records=20973875
+		Map output records=11718011
+		CPU time spent (ms)=716030
+		
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------		
+
+2Job - Hive
+		
+
