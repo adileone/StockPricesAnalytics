@@ -1,0 +1,134 @@
+3Job - MR (job3/MapReduce/join_mapper.py+job3/MapReduce/join_reducer.py) - first stage
+
+AABA	0.677083313465118	1996-07-23	TECHNOLOGY
+AABA	0.677083313465118	1996-07-25	TECHNOLOGY
+AABA	0.682291686534882	1996-07-10	TECHNOLOGY
+AABA	0.692708313465118	1996-07-26	TECHNOLOGY
+AABA	0.708333313465118	1996-07-30	TECHNOLOGY
+...
+...
+
+Job Counters 
+		Killed map tasks=1
+		Launched map tasks=17
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=168329
+		Total time spent by all reduce tasks (ms)=41651
+Map-Reduce Framework
+		Map input records=20980351
+		Map output records=20980335
+		CPU time spent (ms)=144870
+		
+
+3Job - MR (job3/MapReduce/2stage_mapper.py+job3/MapReduce/2stage_reducer.py) - second stage
+
+ZYNE|2018|HEALTH CARE|-58.0	
+ZYNE|2017|HEALTH CARE|56.0	
+ZYNE|2016|HEALTH CARE|36.0	
+ZYNE|2015|HEALTH CARE|0	
+ZYME|2018|HEALTH CARE|45.0	
+ZYME|2017|HEALTH CARE|0	
+ZUO|2018|TECHNOLOGY|0	
+ZUMZ|2018|CONSUMER SERVICES|-9.0	
+ZUMZ|2017|CONSUMER SERVICES|-9.0	
+ZUMZ|2016|CONSUMER SERVICES|-31.0	
+ZUMZ|2015|CONSUMER SERVICES|0	
+ZTS|2018|HEALTH CARE|-11.0	
+ZTS|2017|HEALTH CARE|27.0	
+ZTS|2016|HEALTH CARE|4.0	
+ZTS|2015|HEALTH CARE|0	
+
+....
+....
+
+Job Counters 
+		Killed map tasks=1
+		Launched map tasks=9
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=698605
+		Total time spent by all reduce tasks (ms)=87968
+Map-Reduce Framework
+		Map input records=20973875
+		Map output records=11718011
+		CPU time spent (ms)=716030
+
+3Job - MR (job3/MapReduce/final_mapper.py+job3/MapReduce/final_reducer.py) - third stage
+
+Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Total time spent by all map tasks (ms)=4140
+		Total time spent by all reduce tasks (ms)=7139
+Map-Reduce Framework
+		Map input records=17760
+		Map output records=13624
+		CPU time spent (ms)=3040
+		
+
+TDS,CAKE,2016:1.0%, 2017:1.0%, 2018:-36.0%	
+DUKH,PJH,2016:3.0%, 2017:-2.0%, 2018:-35.0%	
+CCI,TRV,2016:7.0%, 2017:10.0%, 2018:-30.0%	
+JOE,SSWN,2016:0.0%, 2017:1.0%, 2018:-34.0%	
+CHSCP,XOM,2016:4.0%, 2017:-5.0%, 2018:-36.0%	
+CHSCM,MDLZ,2016:5.0%, 2017:1.0%, 2018:-37.0%	
+CHSCM,GYB,2016:5.0%, 2017:1.0%, 2018:-37.0%	
+DCP,UTX,2016:-6.0%, 2017:15.0%, 2018:-28.0%	
+TVE,PRH,2016:3.0%, 2017:-2.0%, 2018:-36.0%	
+TDJ,ISG,2016:0.0%, 2017:0.0%, 2018:-35.0%	
+MDLZ,GYB,2016:5.0%, 2017:1.0%, 2018:-37.0%	
+SUN,LBTYK,2016:-30.0%, 2017:-3.0%, 2018:-39.0%	
+GNMK,DLPH,2016:-15.0%, 2017:21.0%, 2018:-61.0%	
+EAE,ZBK,2016:4.0%, 2017:-3.0%, 2018:-36.0%	
+USATP,ARMK,2016:9.0%, 2017:13.0%, 2018:-33.0%	
+AFGE,USM,2016:2.0%, 2017:-1.0%, 2018:-36.0%	
+RY,MYRG,2016:0.0%, 2017:24.0%, 2018:-31.0%	
+PRH,DTQ,2016:3.0%, 2017:-2.0%, 2018:-36.0%	
+SWJ,SGZA,2016:1.0%, 2017:-2.0%, 2018:-35.0%	
+MGLN,PRGS,2016:3.0%, 2017:23.0%, 2018:-20.0%	
+HST,PKE,2016:-17.0%, 2017:14.0%, 2018:-29.0%	
+PARR,NVS,2016:-21.0%, 2017:5.0%, 2018:-34.0%	
+AMKR,UMH,2016:14.0%, 2017:39.0%, 2018:-41.0%	
+HTA,SENEA,2016:16.0%, 2017:1.0%, 2018:-44.0%	
+TS,WIRE,2016:-1.0%, 2017:15.0%, 2018:-24.0%
+		
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------		
+
+3Job - Hive (job_3.hql)
+Time taken: 03:43
+
+AFGE	USM	-36.0,-1.0,2.0
+AMKR	UMH	-41.0,39.0,14.0
+ARMK	USATP	-33.0,13.0,9.0
+CAKE	TDS	-36.0,1.0,1.0
+CCI	TRV	-30.0,10.0,7.0
+CHSCM	GYB	-37.0,1.0,5.0
+CHSCM	MDLZ	-37.0,1.0,5.0
+CHSCP	XOM	-36.0,-5.0,4.0
+DCP	UTX	-28.0,15.0,-6.0
+DLPH	GNMK	-61.0,21.0,-15.0
+DTQ	PRH	-36.0,-2.0,3.0
+DUKH	PJH	-35.0,-2.0,3.0
+EAE	ZBK	-36.0,-3.0,4.0
+GNMK	DLPH	-61.0,21.0,-15.0
+GYB	CHSCM	-37.0,1.0,5.0
+GYB	MDLZ	-37.0,1.0,5.0
+HST	PKE	-29.0,14.0,-17.0
+HTA	SENEA	-44.0,1.0,16.0
+ISG	TDJ	-35.0,0.0,0.0
+JOE	SSWN	-34.0,1.0,0.0
+LBTYK	SUN	-39.0,-3.0,-30.0
+MDLZ	CHSCM	-37.0,1.0,5.0
+MDLZ	GYB	-37.0,1.0,5.0
+MGLN	PRGS	-20.0,23.0,3.0
+MYRG	RY	-31.0,24.0,0.0
+NVS	PARR	-34.0,5.0,-21.0
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------		
+
+3Job - Spark

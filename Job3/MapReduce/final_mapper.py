@@ -17,4 +17,4 @@ for line in infile:
     if (year == '2015') :
         continue
 
-    print "{}|{}|{}".format(ticker,percentage,sector)    
+    print "{}|{}|{}|{}".format(ticker,year,percentage,sector)    
