@@ -16,7 +16,7 @@ CREATE TEMPORARY TABLE historical_stock_prices (ticker STRING,
 
 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';                                                    
-LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
+LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
 
 CREATE TEMPORARY TABLE historical_stocks (ticker STRING,market STRING,name STRING,sector STRING,industry STRING)
 
@@ -24,7 +24,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
    "separatorChar" = ",",
    "quoteChar"     = "\"");                                                 
-LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/historical_stocks.csv' OVERWRITE INTO TABLE historical_stocks;
+LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stocks.csv' OVERWRITE INTO TABLE historical_stocks;
 
 CREATE TEMPORARY TABLE joined AS 
 SELECT f.ticker as ticker, f.close as close, f.volume as volume, YEAR(f.data) as data, l.sector as sector

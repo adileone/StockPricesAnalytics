@@ -1,3 +1,10 @@
+DROP TABLE historical_stock_prices;
+DROP TABLE historical_stocks;
+DROP TABLE joined;
+DROP TABLE projection;
+DROP TABLE percentage;
+DROP TABLE trends;
+
 CREATE TABLE IF NOT EXISTS historical_stock_prices (ticker STRING, 
                                                     open DOUBLE, 
                                                     close DOUBLE, 
@@ -9,7 +16,7 @@ CREATE TABLE IF NOT EXISTS historical_stock_prices (ticker STRING,
 
 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';                                                    
-LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
+LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
 
 CREATE TABLE IF NOT EXISTS historical_stocks (ticker STRING,market STRING,name STRING,sector STRING,industry STRING)
 
@@ -17,7 +24,7 @@ ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
 WITH SERDEPROPERTIES (
    "separatorChar" = ",",
    "quoteChar"     = "\"");                                                 
-LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/historical_stocks.csv' OVERWRITE INTO TABLE historical_stocks;
+LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stocks.csv' OVERWRITE INTO TABLE historical_stocks;
 
 CREATE TABLE IF NOT EXISTS joined AS 
 SELECT f.ticker as ticker, l.sector as sector, f.close as close, YEAR(f.data) as data

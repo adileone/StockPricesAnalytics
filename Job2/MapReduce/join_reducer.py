@@ -1,9 +1,9 @@
-#!/usr/bin/env python2
 import sys
 
 infile = sys.stdin
 
 last_ticker = None
+last_sector= None
 
 #get input lines from stdin
 for line in infile:

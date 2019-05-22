@@ -8,7 +8,7 @@ startTime = datetime.now()
 
 spark = SparkSession.builder.appName('abc').getOrCreate()
 
-dataFrame = spark.read.format('csv').option('header','true').option('inferSchema','true').option('mode','DROPMALFORMED').load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/historical_stock_prices.csv")
+dataFrame = spark.read.format('csv').option('header','true').option('inferSchema','true').option('mode','DROPMALFORMED').load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stock_prices.csv")
 
 df = dataFrame.filter((dataFrame.date < '2018-01-01') & (dataFrame.date > '1998-01-01'))
 

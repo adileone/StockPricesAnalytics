@@ -17,7 +17,7 @@ CREATE TABLE  historical_stock_prices (ticker STRING,
 
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ',';                                                    
 
-LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
+LOAD DATA LOCAL INPATH '/media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stock_prices.csv' OVERWRITE INTO TABLE historical_stock_prices; 
 
 CREATE TABLE filtered AS 
 SELECT  ticker,close,volume,data

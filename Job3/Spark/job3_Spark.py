@@ -11,10 +11,10 @@ startTime = datetime.now()
 spark = SparkSession.builder.appName('abc').getOrCreate()
 
 stock_prices = spark.read.format('csv').option('header','true').option('inferSchema','true').option('mode','DROPMALFORMED')\
-.load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/historical_stock_prices.csv")
+.load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stock_prices.csv")
 
 stocks = spark.read.format('csv').option('header','true').option('inferSchema','true').option('mode','DROPMALFORMED')\
-.load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/historical_stocks.csv")
+.load("file:///media/alessandro/storage/big_data-primoProgetto/dataset/X3_historical_stocks.csv")
 
 stock_prices=stock_prices.select('ticker','close',year("date").alias('year'))
 
